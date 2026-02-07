@@ -1,0 +1,45 @@
+:root {
+  /* FUNDOS */
+  --bg: #f3f4f6;
+  --bg-panel: #ffffff;
+
+  /* TEXTO */
+  --text: #111827;
+  --text-muted: #6b7280;
+
+  /* BORDAS */
+  --border: #d1d5db;
+
+  /* CORES PRINCIPAIS */
+  --primary: #6366f1;
+  --primary-soft: #eef2ff;
+
+  /* ESTADOS */
+  --hover: #e5e7eb;
+
+  /* FEEDBACK */
+  --green: #22c55e;
+  --yellow: #eab308;
+  --red: #ef4444;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --bg-panel: #1e293b;
+
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --border: #334155;
+
+  --primary: #818cf8;
+  --primary-soft: #1e1b4b;
+
+  --hover: #334155;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.25s, color 0.25s;
+}

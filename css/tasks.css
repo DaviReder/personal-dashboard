@@ -1,0 +1,63 @@
+.tasks-page {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* FORM */
+#task-form {
+  display: flex;
+  gap: 8px;
+}
+
+/* LISTAS */
+.tasks-page ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+/* ITEM */
+.tasks-page li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+/* CONCLUÍDA */
+.tasks-page li.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* META */
+.tasks-page small {
+  color: var(--text-muted);
+}
+
+/* REMOVER */
+.tasks-page .remove {
+  margin-left: auto;
+  background: none;
+  color: var(--red);
+}
+
+.tasks-page {
+  gap: 32px;
+}
+
+.week-calendar {
+  width: 100%;
+}
+
+.calendar-wrapper {
+  overflow-x: auto;
+}
+

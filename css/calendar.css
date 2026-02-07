@@ -1,0 +1,88 @@
+/* ===== CALENDÁRIO SEMANAL ===== */
+
+.week-calendar {
+  display: grid;
+  grid-template-columns: 60px repeat(7, minmax(160px, 1fr));
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 900px;
+  width: 1400;
+}
+
+/* ===== COLUNA DE HORAS ===== */
+
+.calendar-hours {
+  display: grid;
+  grid-template-rows: 40px repeat(17, 60px);
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+}
+
+.calendar-hour {
+  font-size: 11px;
+  padding: 4px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+}
+
+/* ===== DIA ===== */
+
+.calendar-day {
+  position: relative;
+  display: grid;
+  grid-template-rows: 40px repeat(17, 60px);
+  border-left: 1px solid var(--border);
+}
+
+/* CABEÇALHO */
+.calendar-day-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SLOT */
+.calendar-slot {
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar-slot:hover {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* ===== TAREFA ===== */
+
+.calendar-task {
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  background: #6366f1;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 8px;
+  font-size: 12px;
+  cursor: grab;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.calendar-task:active {
+  cursor: grabbing;
+}
+
+/* ===== WRAPPER ===== */
+
+.calendar-wrapper {
+  overflow-x: auto;
+  padding-bottom: 8px;
+}

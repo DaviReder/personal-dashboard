@@ -1,0 +1,84 @@
+#sidebar {
+  width: 64px;
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border);
+  transition: width 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* EXPANSÃO */
+#sidebar:hover {
+  width: 220px;
+}
+
+/* NAV */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  height: 100%;
+}
+
+/* ITEM */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 12px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+
+  color: var(--text-muted);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background: var(--hover);
+  color: var(--text);
+}
+
+/* TEXTO */
+.sidebar-item span {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+/* MOSTRA TEXTO NO HOVER */
+#sidebar:hover .sidebar-item span {
+  opacity: 1;
+}
+
+/* ATIVO */
+.sidebar-item.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* BOTÃO DARK MODE */
+.theme-toggle {
+  margin-top: auto;
+  padding: 12px;
+  border-radius: 10px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-muted);
+
+  transition: background 0.2s, color 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--hover);
+  color: var(--text);
+}

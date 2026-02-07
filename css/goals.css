@@ -1,0 +1,127 @@
+.goals-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FORM */
+#goal-form {
+  display: flex;
+  gap: 8px;
+}
+
+#goal-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-panel);
+  color: var(--text);
+}
+
+#goal-form button {
+  padding: 8px 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* LIST */
+#goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* CARD */
+.goal-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* HEADER */
+.goal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.goal-header input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.goal-header .delete {
+  background: none;
+  border: none;
+  color: var(--red);
+  cursor: pointer;
+}
+
+/* ACTIONS */
+.goal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* HISTORY */
+.goal-history {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.goal-history::-webkit-scrollbar {
+  height: 6px;
+}
+
+.goal-history::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* DOTS */
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.green { background: var(--green); }
+.dot.yellow { background: var(--yellow); }
+.dot.red { background: var(--red); }
+
+/* PANEL */
+.goal-panel {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+/* CALENDAR */
+.goal-calendar {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.goal-card .calendar-day {
+  text-align: center;
+  font-size: 11px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px;
+  min-width: 36px;
+}

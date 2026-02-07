@@ -1,0 +1,69 @@
+:root {
+  /* FUNDOS */
+  --bg: #f3f4f6;
+  --bg-panel: #ffffff;
+
+  /* TEXTO */
+  --text: #111827;
+  --text-muted: #6b7280;
+
+  /* BORDAS */
+  --border: #d1d5db;
+
+  /* CORES PRINCIPAIS */
+  --primary: #6366f1;
+  --primary-soft: #eef2ff;
+
+  /* ESTADOS */
+  --hover: #e5e7eb;
+
+  /* FEEDBACK */
+  --green: #22c55e;
+  --yellow: #eab308;
+  --red: #ef4444;
+}
+
+body.dark {
+  --bg: #020617;
+  --bg-panel: #0f172a;
+
+  --text: #e5e7eb;
+  --text-muted: #94a3b8;
+
+  --border: #1e293b;
+
+  --primary: #818cf8;
+  --primary-soft: #1e1b4b;
+
+  --hover: #1e293b;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.25s, color 0.25s;
+}
+
+/* ELEMENTOS BASE */
+input,
+textarea,
+select {
+  background: var(--bg-panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}

@@ -1,0 +1,55 @@
+.notes-page {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FORM */
+#note-form {
+  display: flex;
+  gap: 8px;
+}
+
+/* LISTA */
+#notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.note-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TÍTULO */
+.note-title {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* TEXTO */
+.note-content {
+  min-height: 120px;
+  border: none;
+  background: transparent;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* DELETE */
+.note-card .delete {
+  align-self: flex-end;
+  background: none;
+  color: var(--red);
+}
