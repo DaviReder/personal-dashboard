@@ -22,7 +22,7 @@
 ## Como rodar localmente
 
 1. Clone o repositório:
-   git clone https://github.com/SEU_USUARIO/Personal-Dashboard.git
+   git clone https://github.com/DaviReder/Personal-Dashboard.git
    
 2. Acesse a pasta do projeto:
    cd Personal-Dashboard
